@@ -82,13 +82,6 @@ CREATE TABLE ShopKeeper (
     shopActive VARCHAR(50) NOT NULL         
 );
 
-CREATE TABLE Item (
-    itemID INT PRIMARY KEY AUTO_INCREMENT,
-    itemName VARCHAR(255) NOT NULL,
-    price DECIMAL(10, 2) NOT NULL,
-    category VARCHAR(100) NOT NULL
-);
-
 CREATE TABLE SaleLineItem (
     itemID INT,
     quantity INT NOT NULL,
