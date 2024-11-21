@@ -21,3 +21,10 @@ CREATE TABLE Inventory (
   FOREIGN KEY (itemID) REFERENCES InventoryItem(itemID),
   PRIMARY KEY (shopID, itemID)
 );
+
+CREATE TABLE Item (
+    itemID INT PRIMARY KEY AUTO_INCREMENT,
+    itemName VARCHAR(255) NOT NULL,
+    price DOUBLE NOT NULL,
+    category VARCHAR(255)
+);
