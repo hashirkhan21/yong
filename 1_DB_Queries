@@ -1,1 +1,23 @@
+CREATE TABLE Shop (
+  shopID INT PRIMARY KEY AUTO_INCREMENT,
+  name VARCHAR(255) NOT NULL,
+  location VARCHAR(255) NOT NULL
+);
 
+-- Create InventoryItem table
+CREATE TABLE InventoryItem (
+  itemID INT PRIMARY KEY AUTO_INCREMENT,
+  itemName VARCHAR(255) NOT NULL,
+  price DOUBLE NOT NULL,
+  category VARCHAR(255) NOT NULL
+);
+
+-- Create ShopInventory table (assuming many-to-many relationship)
+CREATE TABLE Inventory (
+  shopID INT NOT NULL,
+  itemID INT NOT NULL,
+  stock INT NOT NULL,
+  FOREIGN KEY (shopID) REFERENCES Shop(shopID),
+  FOREIGN KEY (itemID) REFERENCES InventoryItem(itemID),
+  PRIMARY KEY (shopID, itemID)
+);
