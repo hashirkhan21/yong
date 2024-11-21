@@ -1,1 +1,11 @@
+public class Order {
+    private int id;
+    private double amount;
+    private String status;
+    private String time;
+    private String address;
+    private String date;
+    public Custom_List list1;
+    //public Optimal_List list2;
 
+}
