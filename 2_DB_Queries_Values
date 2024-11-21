@@ -1,1 +1,122 @@
+INSERT INTO Item (itemName, price, category) VALUES ('Apples', 1.99, 'Fresh Produce');
+INSERT INTO Item (itemName, price, category) VALUES ('Bananas', 0.59, 'Fresh Produce');
+INSERT INTO Item (itemName, price, category) VALUES ('Carrots', 1.29, 'Fresh Produce');
+INSERT INTO Item (itemName, price, category) VALUES ('Lettuce', 2.99, 'Fresh Produce');
+INSERT INTO Item (itemName, price, category) VALUES ('Tomatoes', 2.49, 'Fresh Produce');
+INSERT INTO Item (itemName, price, category) VALUES ('Oranges', 3.99, 'Fresh Produce');
+INSERT INTO Item (itemName, price, category) VALUES ('Potatoes', 0.79, 'Fresh Produce');
+INSERT INTO Item (itemName, price, category) VALUES ('Grapes', 3.49, 'Fresh Produce');
+INSERT INTO Item (itemName, price, category) VALUES ('Strawberries', 4.99, 'Fresh Produce');
+INSERT INTO Item (itemName, price, category) VALUES ('Spinach', 1.99, 'Fresh Produce');
+
+INSERT INTO Item (itemName, price, category) VALUES ('Milk', 2.99, 'Dairy');
+INSERT INTO Item (itemName, price, category) VALUES ('Cheese', 4.99, 'Dairy');
+INSERT INTO Item (itemName, price, category) VALUES ('Yogurt', 1.89, 'Dairy');
+INSERT INTO Item (itemName, price, category) VALUES ('Butter', 3.49, 'Dairy');
+INSERT INTO Item (itemName, price, category) VALUES ('Cream', 2.79, 'Dairy');
+INSERT INTO Item (itemName, price, category) VALUES ('Sour Cream', 2.29, 'Dairy');
+INSERT INTO Item (itemName, price, category) VALUES ('Ice Cream', 5.99, 'Dairy');
+INSERT INTO Item (itemName, price, category) VALUES ('Cottage Cheese', 3.99, 'Dairy');
+INSERT INTO Item (itemName, price, category) VALUES ('Milk Alternatives', 3.49, 'Dairy');
+INSERT INTO Item (itemName, price, category) VALUES ('Whipped Topping', 2.49, 'Dairy');
+
+INSERT INTO Item (itemName, price, category) VALUES ('Chicken Breast', 5.99, 'Meat');
+INSERT INTO Item (itemName, price, category) VALUES ('Ground Beef', 4.99, 'Meat');
+INSERT INTO Item (itemName, price, category) VALUES ('Pork Chops', 6.49, 'Meat');
+INSERT INTO Item (itemName, price, category) VALUES ('Salmon Fillet', 12.99, 'Meat');
+INSERT INTO Item (itemName, price, category) VALUES ('Turkey', 7.99, 'Meat');
+INSERT INTO Item (itemName, price, category) VALUES ('Bacon', 8.99, 'Meat');
+INSERT INTO Item (itemName, price, category) VALUES ('Sausage', 5.49, 'Meat');
+INSERT INTO Item (itemName, price, category) VALUES ('Steak', 14.99, 'Meat');
+INSERT INTO Item (itemName, price, category) VALUES ('Deli Ham', 3.99, 'Meat');
+INSERT INTO Item (itemName, price, category) VALUES ('Lamb Chops', 15.99, 'Meat');
+
+INSERT INTO Item (itemName, price, category) VALUES ('Bread', 2.49, 'Bakery');
+INSERT INTO Item (itemName, price, category) VALUES ('Croissants', 3.79, 'Bakery');
+INSERT INTO Item (itemName, price, category) VALUES ('Baguette', 2.99, 'Bakery');
+INSERT INTO Item (itemName, price, category) VALUES ('Bagels', 1.99, 'Bakery');
+INSERT INTO Item (itemName, price, category) VALUES ('Muffins', 4.99, 'Bakery');
+INSERT INTO Item (itemName, price, category) VALUES ('Cookies', 2.79, 'Bakery');
+INSERT INTO Item (itemName, price, category) VALUES ('Cake', 9.99, 'Bakery');
+INSERT INTO Item (itemName, price, category) VALUES ('Brownies', 3.49, 'Bakery');
+INSERT INTO Item (itemName, price, category) VALUES ('Tortillas', 2.49, 'Bakery');
+INSERT INTO Item (itemName, price, category) VALUES ('Pita Bread', 2.99, 'Bakery');
+
+INSERT INTO Item (itemName, price, category) VALUES ('Frozen Peas', 1.99, 'Frozen Foods');
+INSERT INTO Item (itemName, price, category) VALUES ('Ice Cream Bars', 4.49, 'Frozen Foods');
+INSERT INTO Item (itemName, price, category) VALUES ('Frozen Pizza', 7.99, 'Frozen Foods');
+INSERT INTO Item (itemName, price, category) VALUES ('Frozen Veggies', 2.99, 'Frozen Foods');
+INSERT INTO Item (itemName, price, category) VALUES ('Frozen Fruits', 3.49, 'Frozen Foods');
+INSERT INTO Item (itemName, price, category) VALUES ('Frozen Dinners', 5.99, 'Frozen Foods');
+INSERT INTO Item (itemName, price, category) VALUES ('Frozen Burritos', 3.69, 'Frozen Foods');
+INSERT INTO Item (itemName, price, category) VALUES ('Frozen Waffles', 3.29, 'Frozen Foods');
+INSERT INTO Item (itemName, price, category) VALUES ('Frozen Fish Sticks', 4.99, 'Frozen Foods');
+INSERT INTO Item (itemName, price, category) VALUES ('Frozen Chicken Nuggets', 6.99, 'Frozen Foods');
+
+INSERT INTO Item (itemName, price, category) VALUES ('Canned Beans', 1.49, 'Canned Goods');
+INSERT INTO Item (itemName, price, category) VALUES ('Canned Soup', 1.99, 'Canned Goods');
+INSERT INTO Item (itemName, price, category) VALUES ('Canned Tomatoes', 1.59, 'Canned Goods');
+INSERT INTO Item (itemName, price, category) VALUES ('Canned Corn', 1.29, 'Canned Goods');
+INSERT INTO Item (itemName, price, category) VALUES ('Canned Fruit', 2.49, 'Canned Goods');
+INSERT INTO Item (itemName, price, category) VALUES ('Canned Tuna', 2.99, 'Canned Goods');
+INSERT INTO Item (itemName, price, category) VALUES ('Canned Chili', 3.29, 'Canned Goods');
+INSERT INTO Item (itemName, price, category) VALUES ('Canned Chicken', 4.49, 'Canned Goods');
+INSERT INTO Item (itemName, price, category) VALUES ('Canned Coconut Milk', 1.89, 'Canned Goods');
+INSERT INTO Item (itemName, price, category) VALUES ('Canned Vegetables', 1.69, 'Canned Goods');
+
+INSERT INTO Item (itemName, price, category) VALUES ('Pasta', 1.99, 'Dry Goods');
+INSERT INTO Item (itemName, price, category) VALUES ('Rice', 2.49, 'Dry Goods');
+INSERT INTO Item (itemName, price, category) VALUES ('Flour', 1.29, 'Dry Goods');
+INSERT INTO Item (itemName, price, category) VALUES ('Sugar', 1.89, 'Dry Goods');
+INSERT INTO Item (itemName, price, category) VALUES ('Lentils', 2.99, 'Dry Goods');
+INSERT INTO Item (itemName, price, category) VALUES ('Quinoa', 3.49, 'Dry Goods');
+INSERT INTO Item (itemName, price, category) VALUES ('Oats', 2.19, 'Dry Goods');
+INSERT INTO Item (itemName, price, category) VALUES ('Chickpeas', 1.99, 'Dry Goods');
+INSERT INTO Item (itemName, price, category) VALUES ('Cornmeal', 2.29, 'Dry Goods');
+INSERT INTO Item (itemName, price, category) VALUES ('Barley', 2.49, 'Dry Goods');
+
+INSERT INTO Item (itemName, price, category) VALUES ('Ketchup', 2.49, 'Condiments');
+INSERT INTO Item (itemName, price, category) VALUES ('Mustard', 1.89, 'Condiments');
+INSERT INTO Item (itemName, price, category) VALUES ('Mayonnaise', 3.29, 'Condiments');
+INSERT INTO Item (itemName, price, category) VALUES ('Soy Sauce', 2.99, 'Condiments');
+INSERT INTO Item (itemName, price, category) VALUES ('Hot Sauce', 3.49, 'Condiments');
+INSERT INTO Item (itemName, price, category) VALUES ('Barbecue Sauce', 3.19, 'Condiments');
+INSERT INTO Item (itemName, price, category) VALUES ('Salad Dressing', 2.99, 'Condiments');
+INSERT INTO Item (itemName, price, category) VALUES ('Salsa', 3.39, 'Condiments');
+INSERT INTO Item (itemName, price, category) VALUES ('Relish', 1.99, 'Condiments');
+INSERT INTO Item (itemName, price, category) VALUES ('Vinegar', 1.89, 'Condiments');
+
+INSERT INTO Item (itemName, price, category) VALUES ('Soda', 1.99, 'Beverages');
+INSERT INTO Item (itemName, price, category) VALUES ('Fruit Juice', 3.29, 'Beverages');
+INSERT INTO Item (itemName, price, category) VALUES ('Coffee', 4.99, 'Beverages');
+INSERT INTO Item (itemName, price, category) VALUES ('Tea', 2.49, 'Beverages');
+INSERT INTO Item (itemName, price, category) VALUES ('Energy Drink', 2.99, 'Beverages');
+INSERT INTO Item (itemName, price, category) VALUES ('Sparkling Water', 1.79, 'Beverages');
+INSERT INTO Item (itemName, price, category) VALUES ('Sports Drink', 1.89, 'Beverages');
+INSERT INTO Item (itemName, price, category) VALUES ('Iced Tea', 2.79, 'Beverages');
+INSERT INTO Item (itemName, price, category) VALUES ('Lemonade', 2.49, 'Beverages');
+INSERT INTO Item (itemName, price, category) VALUES ('Milkshake', 3.59, 'Beverages');
+
+INSERT INTO Item (itemName, price, category) VALUES ('Dish Soap', 2.49, 'Household Goods');
+INSERT INTO Item (itemName, price, category) VALUES ('Laundry Detergent', 8.99, 'Household Goods');
+INSERT INTO Item (itemName, price, category) VALUES ('Glass Cleaner', 3.49, 'Household Goods');
+INSERT INTO Item (itemName, price, category) VALUES ('Trash Bags', 6.99, 'Household Goods');
+INSERT INTO Item (itemName, price, category) VALUES ('Toilet Paper', 5.49, 'Household Goods');
+INSERT INTO Item (itemName, price, category) VALUES ('Paper Towels', 3.99, 'Household Goods');
+INSERT INTO Item (itemName, price, category) VALUES ('Sponges', 1.99, 'Household Goods');
+INSERT INTO Item (itemName, price, category) VALUES ('Air Freshener', 4.99, 'Household Goods');
+INSERT INTO Item (itemName, price, category) VALUES ('Cleaning Wipes', 2.99, 'Household Goods');
+INSERT INTO Item (itemName, price, category) VALUES ('Light Bulbs', 6.29, 'Household Goods');
+
+INSERT INTO Item (itemName, price, category) VALUES ('Shampoo', 5.99, 'Personal Care');
+INSERT INTO Item (itemName, price, category) VALUES ('Conditioner', 5.99, 'Personal Care');
+INSERT INTO Item (itemName, price, category) VALUES ('Body Wash', 4.49, 'Personal Care');
+INSERT INTO Item (itemName, price, category) VALUES ('Toothpaste', 2.99, 'Personal Care');
+INSERT INTO Item (itemName, price, category) VALUES ('Deodorant', 3.99, 'Personal Care');
+INSERT INTO Item (itemName, price, category) VALUES ('Face Cream', 12.99, 'Personal Care');
+INSERT INTO Item (itemName, price, category) VALUES ('Shaving Cream', 3.49, 'Personal Care');
+INSERT INTO Item (itemName, price, category) VALUES ('Lotion', 4.99, 'Personal Care');
+INSERT INTO Item (itemName, price, category) VALUES ('Sunscreen', 10.99, 'Personal Care');
+INSERT INTO Item (itemName, price, category) VALUES ('Lip Balm', 2.49, 'Personal Care');
+
 
