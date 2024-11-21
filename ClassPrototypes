@@ -9,3 +9,20 @@ public class Order {
     //public Optimal_List list2;
 
 }
+
+// Created By Abbas
+
+// Handle Feedback
+class Account {
+
+    String name;
+    String email;
+    String password;
+    String phoneNumber;
+
+    // updateProfile(profileInfo);
+    void updatePassword(String password) {};
+    // updatePreferences(preferences);
+    boolean confirmDeletion() {};
+}
+
