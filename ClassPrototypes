@@ -44,11 +44,19 @@ class Admin {
     int id;
     Account account;
 
-    void addEscalationResponse(int feedbackID, String comments, String status, String priority) {};
-    void addRejectionResponse(int feedbackID, String comments, String status) {};
+    void addEscalationResponse(int feedbackID, String comments, String status, String priority) {}
+    void addRejectionResponse(int feedbackID, String comments, String status) {}
     // reviewShopApplication(shop_id)
     // approveShopApplication(shop_id)
     // denyShopApplication(shop_id)
+
+    // Getters
+    int getId() { return id; }
+    Account getAccount() { return account; }
+
+    // Setters
+    void setId(int id) { this.id = id; }
+    void setAccount(Account account) { this.account = account; }
 }
 
 class User {
