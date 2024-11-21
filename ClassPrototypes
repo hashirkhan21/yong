@@ -21,6 +21,8 @@ class Account {
     String password;
     String phoneNumber;
 
+    public Account() {}
+
     // updateProfile(profileInfo)
     void updatePassword(String password) {}
     // updatePreferences(preferences)
@@ -43,6 +45,8 @@ class Account {
 class Admin {
     int id;
     Account account;
+
+    public Admin() {}
 
     void addEscalationResponse(int feedbackID, String comments, String status, String priority) {}
     void addRejectionResponse(int feedbackID, String comments, String status) {}
@@ -67,6 +71,8 @@ class User {
     String location;
     int familySize;
 
+    public User() {}
+
     // Getters
     int getID() { return ID; }
     String getPreferences() { return preferences; }
@@ -83,6 +89,7 @@ class User {
 
 }
 
+
 class Feedback {
     int feedbackID;
     User user;
@@ -92,10 +99,11 @@ class Feedback {
     String status;
     String priority;
 
+    public Feedback() {}
+
     ArrayList<Feedback> getAllFeedbacks() { return null;}
     Feedback getFeedback(int feedbackID) {return null;}
-
-
+    
     // Getters
     int getFeedbackID() { return feedbackID; }
     User getUser() { return user; }
@@ -120,6 +128,8 @@ class ShopKeeper {
     int ID;
     String shopActive;
 
+    public ShopKeeper() {}
+
     // Getters
     int getID() { return ID; }
     String getShopActive() { return shopActive; }
@@ -129,3 +139,79 @@ class ShopKeeper {
     void setShopActive(String shopActive) { this.shopActive = shopActive; }
 
 }
+
+class Item {
+    int itemID;
+    String itemName;
+    double price;
+    String category;
+
+    public Item() {}
+
+    // Getters
+    int getItemID() { return itemID; }
+    String getItemName() { return itemName; }
+    double getPrice() { return price; }
+    String getCategory() { return category; }
+
+    // Setters
+    void setItemID(int itemID) { this.itemID = itemID; }
+    void setItemName(String itemName) { this.itemName = itemName; }
+    void setPrice(double price) { this.price = price; }
+    void setCategory(String category) { this.category = category; }
+
+}
+
+class InventoryItem {
+    int itemID;
+    int stockLevel;
+
+    public InventoryItem() {}
+
+    // Getters
+    int getItemID() { return itemID; }
+    int getStockLevel() { return stockLevel; }
+
+    // Setters
+    void setItemID(int itemID) { this.itemID = itemID; }
+    void setStockLevel(int stockLevel) { this.stockLevel = stockLevel; }
+}
+
+class Inventory {
+    ArrayList<InventoryItem> inventoryList;
+
+    public Inventory() {}
+
+    void addItem(int itemID, String name, String category, double price, int stock) {}
+    void editItem(int itemID, String name, String category, double price, int stock) {}
+    void deleteItem(int itemID) {}
+
+    // Getters
+    ArrayList<InventoryItem> getInventoryList() { return inventoryList; }
+
+    // Setters
+    void setInventoryList(ArrayList<InventoryItem> inventoryList) { this.inventoryList = inventoryList; }
+}
+
+class Shop {
+    int shopID;
+    String name;
+    String location;
+    Inventory inventory;
+
+    public Shop() {}
+
+    // Getters
+    int getShopID() { return shopID; }
+    String getName() { return name; }
+    String getLocation() { return location; }
+    Inventory getInventory() { return inventory; }
+
+    // Setters
+    void setShopID(int shopID) { this.shopID = shopID; }
+    void setName(String name) { this.name = name; }
+    void setLocation(String location) { this.location = location; }
+    void setInventory(Inventory inventory) { this.inventory = inventory; }
+
+}
+
