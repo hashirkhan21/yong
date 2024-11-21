@@ -38,3 +38,27 @@ class Admin {
     // denyShopApplication(shop_id)
 }
 
+class User {
+
+    int ID;
+    String preferences;
+    int budget;
+    String location;
+    int familySize;
+}
+
+class Feedback {
+    int feedbackID;
+    User user;
+    String userComments;
+    String adminComments;
+    String type;
+    String status;
+    String priority;
+
+    ArrayList<Feedback> getAllFeedbacks() { return null;};
+    Feedback getFeedback(int feedbackID) {return null;};
+    void setAdminComments(String comments) {};
+    void setStatus(String status) {};
+    void setPriority(String priority) {};
+}
