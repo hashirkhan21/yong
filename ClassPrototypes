@@ -16,12 +16,16 @@ public class Order {
 
 class Account {
 
+    private
+
     String name;
     String email;
     String password;
     String phoneNumber;
 
-    public Account() {}
+    public
+
+    Account() {}
 
     // updateProfile(profileInfo)
     void updatePassword(String password) {}
@@ -43,10 +47,15 @@ class Account {
 }
 
 class Admin {
+
+    private
+
     int id;
     Account account;
 
-    public Admin() {}
+    public
+
+    Admin() {}
 
     void addEscalationResponse(int feedbackID, String comments, String status, String priority) {}
     void addRejectionResponse(int feedbackID, String comments, String status) {}
@@ -65,13 +74,17 @@ class Admin {
 
 class User {
 
+    private
+
     int ID;
     String preferences;
     int budget;
     String location;
     int familySize;
 
-    public User() {}
+    public
+
+    User() {}
 
     // Getters
     int getID() { return ID; }
@@ -91,6 +104,8 @@ class User {
 
 
 class Feedback {
+    private
+
     int feedbackID;
     User user;
     String userComments;
@@ -99,11 +114,13 @@ class Feedback {
     String status;
     String priority;
 
-    public Feedback() {}
+    public
+
+    Feedback() {}
 
     ArrayList<Feedback> getAllFeedbacks() { return null;}
     Feedback getFeedback(int feedbackID) {return null;}
-    
+
     // Getters
     int getFeedbackID() { return feedbackID; }
     User getUser() { return user; }
@@ -125,10 +142,14 @@ class Feedback {
 }
 
 class ShopKeeper {
+    private
+
     int ID;
     String shopActive;
 
-    public ShopKeeper() {}
+    public
+
+    ShopKeeper() {}
 
     // Getters
     int getID() { return ID; }
@@ -141,12 +162,16 @@ class ShopKeeper {
 }
 
 class Item {
+    private
+
     int itemID;
     String itemName;
     double price;
     String category;
 
-    public Item() {}
+    public
+
+    Item() {}
 
     // Getters
     int getItemID() { return itemID; }
@@ -163,10 +188,14 @@ class Item {
 }
 
 class InventoryItem {
+    private
+
     int itemID;
     int stockLevel;
 
-    public InventoryItem() {}
+    public
+
+    InventoryItem() {}
 
     // Getters
     int getItemID() { return itemID; }
@@ -178,9 +207,13 @@ class InventoryItem {
 }
 
 class Inventory {
+    private
+
     ArrayList<InventoryItem> inventoryList;
 
-    public Inventory() {}
+    public
+
+    Inventory() {}
 
     void addItem(int itemID, String name, String category, double price, int stock) {}
     void editItem(int itemID, String name, String category, double price, int stock) {}
@@ -194,12 +227,16 @@ class Inventory {
 }
 
 class Shop {
+    private
+
     int shopID;
     String name;
     String location;
     Inventory inventory;
 
-    public Shop() {}
+    public
+
+    Shop() {}
 
     // Getters
     int getShopID() { return shopID; }
@@ -215,3 +252,57 @@ class Shop {
 
 }
 
+class SaleLineItem {
+    private
+
+    Item item;
+    int quantity;
+    Shop shop;
+
+    public
+
+    SaleLineItem() {}
+
+    // Getters
+    Item getItem() { return item; }
+    int getQuantity() { return quantity; }
+    Shop getShop() { return shop; }
+
+    // Setters
+    void setItem(Item item) { this.item = item; }
+    void setQuantity(int quantity) { this.quantity = quantity; }
+    void setShop(Shop shop) { this.shop = shop; }
+
+}
+
+class OptimalList {
+    private
+
+    int ID;
+    String date;
+    ArrayList<String> categories;
+    int[] percentages;
+    double totalCost;
+    ArrayList<SaleLineItem> optimalList;
+
+    public
+
+    OptimalList() {}
+
+    // Getters
+    int getID() { return ID; }
+    String getDate() { return date; }
+    ArrayList<String> getCategories() { return categories; }
+    int[] getPercentages() { return percentages; }
+    double getTotalCost() { return totalCost; }
+    ArrayList<SaleLineItem> getOptimalList() { return optimalList; }
+
+    // Setters
+    void setID(int ID) { this.ID = ID; }
+    void setDate(String date) { this.date = date; }
+    void setCategories(ArrayList<String> categories) { this.categories = categories; }
+    void setPercentages(int[] percentages) { this.percentages = percentages; }
+    void setTotalCost(double totalCost) { this.totalCost = totalCost; }
+    void setOptimalList(ArrayList<SaleLineItem> optimalList) { this.optimalList = optimalList; }
+
+}
