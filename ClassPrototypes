@@ -66,6 +66,21 @@ class User {
     int budget;
     String location;
     int familySize;
+
+    // Getters
+    int getID() { return ID; }
+    String getPreferences() { return preferences; }
+    int getBudget() { return budget; }
+    String getLocation() { return location; }
+    int getFamilySize() { return familySize; }
+
+    // Setters
+    void setID(int ID) { this.ID = ID; }
+    void setPreferences(String preferences) { this.preferences = preferences; }
+    void setBudget(int budget) { this.budget = budget; }
+    void setLocation(String location) { this.location = location; }
+    void setFamilySize(int familySize) { this.familySize = familySize; }
+
 }
 
 class Feedback {
