@@ -120,3 +120,179 @@ INSERT INTO Item (itemName, price, category) VALUES ('Sunscreen', 10.99, 'Person
 INSERT INTO Item (itemName, price, category) VALUES ('Lip Balm', 2.49, 'Personal Care');
 
 
+-- Fresh Produce
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (1, 100);   -- Apples
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (2, 150);   -- Bananas
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (3, 200);   -- Carrots
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (4, 80);    -- Lettuce
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (5, 90);    -- Tomatoes
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (6, 120);   -- Oranges
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (7, 110);   -- Potatoes
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (8, 100);   -- Grapes
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (9, 75);    -- Strawberries
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (10, 60);   -- Spinach
+
+-- Repeating some fresh produce
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (1, 50);    -- Apples (repeated)
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (5, 45);    -- Tomatoes (repeated)
+
+-- Dairy
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (11, 70);   -- Milk
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (12, 30);   -- Cheese
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (13, 40);   -- Yogurt
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (14, 50);   -- Butter
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (15, 60);   -- Cream
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (16, 20);   -- Sour Cream
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (17, 35);   -- Ice Cream
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (18, 25);   -- Cottage Cheese
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (19, 30);   -- Milk Alternatives
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (20, 18);   -- Whipped Topping
+
+-- Repeating some dairy items
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (11, 40);   -- Milk (repeated)
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (12, 50);   -- Cheese (repeated)
+
+-- Meat
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (21, 80);   -- Chicken Breast
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (22, 60);   -- Ground Beef
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (23, 50);   -- Pork Chops
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (24, 40);   -- Salmon Fillet
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (25, 90);   -- Turkey
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (26, 75);   -- Bacon
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (27, 50);   -- Sausage
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (28, 120);  -- Steak
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (29, 40);   -- Deli Ham
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (30, 30);   -- Lamb Chops
+
+-- Repeating some meat items
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (21, 30);   -- Chicken Breast (repeated)
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (28, 40);   -- Steak (repeated)
+
+-- Bakery
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (31, 100);  -- Bread
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (32, 80);   -- Croissants
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (33, 70);   -- Baguette
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (34, 90);   -- Bagels
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (35, 60);   -- Muffins
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (36, 50);   -- Cookies
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (37, 40);   -- Cake
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (38, 30);   -- Brownies
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (39, 20);   -- Tortillas
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (40, 25);   -- Pita Bread
+
+-- Repeating some bakery items
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (31, 30);   -- Bread (repeated)
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (36, 25);   -- Cookies (repeated)
+
+-- Frozen Foods
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (41, 100);  -- Frozen Peas
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (42, 80);   -- Ice Cream Bars
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (43, 70);   -- Frozen Pizza
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (44, 90);   -- Frozen Veggies
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (45, 60);   -- Frozen Fruits
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (46, 50);   -- Frozen Dinners
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (47, 40);   -- Frozen Burritos
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (48, 30);   -- Frozen Waffles
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (49, 50);   -- Frozen Fish Sticks
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (50, 25);   -- Frozen Chicken Nuggets
+
+-- Repeating some frozen food items
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (41, 20);   -- Frozen Peas (repeated)
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (46, 30);   -- Frozen Dinners (repeated)
+
+-- Canned Goods
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (51, 100);  -- Canned Beans
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (52, 80);   -- Canned Soup
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (53, 50);   -- Canned Tomatoes
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (54, 70);   -- Canned Corn
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (55, 90);   -- Canned Fruit
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (56, 60);   -- Canned Tuna
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (57, 75);   -- Canned Chili
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (58, 30);   -- Canned Chicken
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (59, 40);   -- Canned Coconut Milk
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (60, 55);   -- Canned Vegetables
+
+-- Repeating some canned goods items
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (51, 30);   -- Canned Beans (repeated)
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (56, 20);   -- Canned Tuna (repeated)
+
+-- Dry Goods
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (61, 100);  -- Pasta
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (62, 80);   -- Rice
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (63, 50);   -- Flour
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (64, 70);   -- Sugar
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (65, 90);   -- Lentils
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (66, 60);   -- Quinoa
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (67, 75);   -- Oats
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (68, 30);   -- Chickpeas
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (69, 40);   -- Cornmeal
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (70, 55);   -- Barley
+
+-- Repeating some dry goods items
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (61, 45);   -- Pasta (repeated)
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (62, 40);   -- Rice (repeated)
+
+-- Condiments
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (71, 100);  -- Ketchup
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (72, 80);   -- Mustard
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (73, 50);   -- Mayonnaise
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (74, 70);   -- Soy Sauce
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (75, 90);   -- Hot Sauce
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (76, 60);   -- Barbecue Sauce
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (77, 75);   -- Salad Dressing
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (78, 30);   -- Salsa
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (79, 40);   -- Relish
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (80, 55);   -- Vinegar
+
+-- Repeating some condiment items
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (71, 30);   -- Ketchup (repeated)
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (76, 25);   -- Barbecue Sauce (repeated)
+
+-- Beverages
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (81, 100);  -- Soda
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (82, 80);   -- Fruit Juice
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (83, 50);   -- Coffee
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (84, 70);   -- Tea
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (85, 90);   -- Energy Drink
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (86, 60);   -- Sparkling Water
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (87, 75);   -- Sports Drink
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (88, 30);   -- Iced Tea
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (89, 40);   -- Lemonade
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (90, 55);   -- Milkshake
+
+-- Repeating some beverage items
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (81, 30);   -- Soda (repeated)
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (83, 25);   -- Coffee (repeated)
+
+-- Household Goods
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (91, 100);  -- Dish Soap
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (92, 80);   -- Laundry Detergent
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (93, 50);   -- Glass Cleaner
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (94, 70);   -- Trash Bags
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (95, 90);   -- Toilet Paper
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (96, 60);   -- Paper Towels
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (97, 75);   -- Sponges
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (98, 30);   -- Air Freshener
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (99, 40);   -- Cleaning Wipes
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (100, 55);  -- Light Bulbs
+
+-- Repeating some household goods items
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (91, 20);   -- Dish Soap (repeated)
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (92, 30);   -- Laundry Detergent (repeated)
+
+-- Personal Care
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (101, 100); -- Shampoo
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (102, 80);  -- Conditioner
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (103, 50);  -- Body Wash
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (104, 70);  -- Toothpaste
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (105, 90);  -- Deodorant
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (106, 60);  -- Face Cream
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (107, 75);  -- Shaving Cream
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (108, 30);  -- Lotion
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (109, 40);  -- Sunscreen
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (110, 55);  -- Lip Balm
+
+-- Repeating some personal care items
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (101, 20);  -- Shampoo (repeated)
+INSERT INTO InventoryItem (itemID, stockLevel) VALUES (106, 25);  -- Face Cream 
+
