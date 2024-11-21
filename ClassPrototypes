@@ -27,3 +27,14 @@ class Account {
     boolean confirmDeletion() {};
 }
 
+class Admin {
+    int id;
+    Account account;
+
+    void addEscalationResponse(int feedbackID, String comments, String status, String priority) {};
+    void addRejectionResponse(int feedbackID, String comments, String status) {};
+    // reviewShopApplication(shop_id)
+    // approveShopApplication(shop_id)
+    // denyShopApplication(shop_id)
+}
+
