@@ -92,9 +92,26 @@ class Feedback {
     String status;
     String priority;
 
-    ArrayList<Feedback> getAllFeedbacks() { return null;};
-    Feedback getFeedback(int feedbackID) {return null;};
-    void setAdminComments(String comments) {};
-    void setStatus(String status) {};
-    void setPriority(String priority) {};
+    ArrayList<Feedback> getAllFeedbacks() { return null;}
+    Feedback getFeedback(int feedbackID) {return null;}
+
+
+    // Getters
+    int getFeedbackID() { return feedbackID; }
+    User getUser() { return user; }
+    String getUserComments() { return userComments; }
+    String getAdminComments() { return adminComments; }
+    String getType() { return type; }
+    String getStatus() { return status; }
+    String getPriority() { return priority; }
+
+    // Setters
+    void setFeedbackID(int feedbackID) { this.feedbackID = feedbackID; }
+    void setUser(User user) { this.user = user; }
+    void setUserComments(String userComments) { this.userComments = userComments; }
+    void setAdminComments(String adminComments) { this.adminComments = adminComments; }
+    void setType(String type) { this.type = type; }
+    void setStatus(String status) { this.status = status; }
+    void setPriority(String priority) { this.priority = priority; }
+
 }
