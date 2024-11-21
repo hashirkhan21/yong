@@ -82,6 +82,7 @@ class User {
     int budget;
     String location;
     int familySize;
+    Account account;
 
     public
 
