@@ -21,10 +21,23 @@ class Account {
     String password;
     String phoneNumber;
 
-    // updateProfile(profileInfo);
-    void updatePassword(String password) {};
-    // updatePreferences(preferences);
-    boolean confirmDeletion() {};
+    // updateProfile(profileInfo)
+    void updatePassword(String password) {}
+    // updatePreferences(preferences)
+    boolean confirmDeletion() {return false;}
+
+    // Getters
+    String getName() { return name; }
+    String getEmail() { return email; }
+    String getPassword() { return password; }
+    String getPhoneNumber() { return phoneNumber; }
+
+    // Setters
+    void setName(String name) { this.name = name; }
+    void setEmail(String email) { this.email = email; }
+    void setPassword(String password) { this.password = password; }
+    void setPhoneNumber(String phoneNumber) { this.phoneNumber = phoneNumber; }
+
 }
 
 class Admin {
