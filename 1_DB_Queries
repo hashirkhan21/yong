@@ -36,3 +36,114 @@ CREATE TABLE Shop (
     inventoryID INT NOT NULL,                      -- Foreign key referencing Inventory
     FOREIGN KEY (inventoryID) REFERENCES Inventory(inventoryID) ON DELETE CASCADE
 );
+
+
+
+
+------- Tables made by Abbas ------
+
+
+CREATE TABLE Account (
+    name VARCHAR(255) PRIMARY KEY,
+    email VARCHAR(255) NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    phoneNumber VARCHAR(15) 
+);
+
+CREATE TABLE Admin (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    account_name VARCHAR(255) NOT NULL, 
+    FOREIGN KEY (account_name) REFERENCES Account(name)
+);
+
+CREATE TABLE User (
+    ID INT PRIMARY KEY AUTO_INCREMENT,     
+    preferences TEXT,                       
+    budget INT,                    
+    location VARCHAR(255),                 
+    familySize INT,            
+    accountName VARCHAR(255) UNIQUE,       
+    FOREIGN KEY (accountName) REFERENCES Account(name)
+);
+
+CREATE TABLE Feedback (
+    feedbackID INT PRIMARY KEY AUTO_INCREMENT,     
+    userID INT NOT NULL,                          
+    userComments TEXT,                             
+    adminComments TEXT,                            
+    type VARCHAR(255),                            
+    status VARCHAR(50),                            
+    priority VARCHAR(50),
+    FOREIGN KEY (userID) REFERENCES User(ID)     
+);
+
+CREATE TABLE ShopKeeper (
+    ID INT PRIMARY KEY AUTO_INCREMENT,  
+    shopActive VARCHAR(50) NOT NULL         
+);
+
+CREATE TABLE Item (
+    itemID INT PRIMARY KEY AUTO_INCREMENT,
+    itemName VARCHAR(255) NOT NULL,
+    price DECIMAL(10, 2) NOT NULL,
+    category VARCHAR(100) NOT NULL
+);
+
+CREATE TABLE SaleLineItem (
+    itemID INT,
+    quantity INT NOT NULL,
+    shopID INT NOT NULL,
+    PRIMARY KEY (itemID, shopID),
+    FOREIGN KEY (itemID) REFERENCES Item(itemID),
+    FOREIGN KEY (shopID) REFERENCES Shop(ID)
+);
+
+CREATE TABLE OptimalList (
+    ID INT PRIMARY KEY AUTO_INCREMENT,
+    date DATE NOT NULL,
+    totalCost DECIMAL(10, 2) NOT NULL
+);
+
+CREATE TABLE OptimalListCategories (
+    category VARCHAR(100) PRIMARY KEY
+);
+
+CREATE TABLE OptimalListPercentages (
+    optimalListID INT,
+    category VARCHAR(100),
+    percentage INT NOT NULL,
+    PRIMARY KEY (optimalListID, category),
+    FOREIGN KEY (optimalListID) REFERENCES OptimalList(ID)
+);
+
+CREATE TABLE OptimalSaleLineItem (
+    optimalListID INT,
+    itemID INT,
+    quantity INT NOT NULL,
+    shopID INT NOT NULL,
+    PRIMARY KEY (optimalListID, itemID, shopID),
+    FOREIGN KEY (optimalListID) REFERENCES OptimalList(ID),
+    FOREIGN KEY (itemID) REFERENCES Item(itemID),
+    FOREIGN KEY (shopID) REFERENCES Shop(ID)
+);
+
+CREATE TABLE SharedList (
+    senderID INT,
+    receiverID INT,
+    PRIMARY KEY (senderID, receiverID),
+    FOREIGN KEY (senderID) REFERENCES User(ID),
+    FOREIGN KEY (receiverID) REFERENCES User(ID)
+);
+
+CREATE TABLE SharedSaleLineItem (
+    sharedListSenderID INT,
+    sharedListReceiverID INT,
+    itemID INT,
+    quantity INT NOT NULL,
+    shopID INT NOT NULL,
+    PRIMARY KEY (sharedListSenderID, sharedListReceiverID),
+    FOREIGN KEY (sharedListSenderID, sharedListReceiverID) REFERENCES SharedList(senderID, receiverID),
+    FOREIGN KEY (itemID) REFERENCES Item(itemID),
+    FOREIGN KEY (shopID) REFERENCES Shop(ID)
+);
+
