@@ -115,3 +115,17 @@ class Feedback {
     void setPriority(String priority) { this.priority = priority; }
 
 }
+
+class ShopKeeper {
+    int ID;
+    String shopActive;
+
+    // Getters
+    int getID() { return ID; }
+    String getShopActive() { return shopActive; }
+
+    // Setters
+    void setID(int ID) { this.ID = ID; }
+    void setShopActive(String shopActive) { this.shopActive = shopActive; }
+
+}
