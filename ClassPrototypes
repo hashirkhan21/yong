@@ -192,6 +192,7 @@ class Item {
 class InventoryItem {
     private
 
+    Item item;
     int itemID;
     int stockLevel;
 
@@ -202,10 +203,12 @@ class InventoryItem {
     // Getters
     int getItemID() { return itemID; }
     int getStockLevel() { return stockLevel; }
+    Item getItem() { return item; }
 
     // Setters
     void setItemID(int itemID) { this.itemID = itemID; }
     void setStockLevel(int stockLevel) { this.stockLevel = stockLevel; }
+    void setItem(Item item) { this.item  = item; }
 }
 
 class Inventory {
