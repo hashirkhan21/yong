@@ -1,3 +1,37 @@
+-- Abbas's dummy data for Handle feedback
+
+INSERT INTO Account (name, email, password, phoneNumber) 
+VALUES ('admin_user', 'admin@example.com', 'securepassword123', '1234567890');
+
+INSERT INTO Admin (account_name) 
+VALUES ('admin_user');
+
+INSERT INTO Account (name, email, password, phoneNumber) 
+VALUES 
+('user1', 'user1@example.com', 'password1', '1111111111'),
+('user2', 'user2@example.com', 'password2', '2222222222'),
+('user3', 'user3@example.com', 'password3', '3333333333'),
+('user4', 'user4@example.com', 'password4', '4444444444'),
+('user5', 'user5@example.com', 'password5', '5555555555');
+
+INSERT INTO User (preferences, budget, location, familySize, accountName) 
+VALUES 
+('Vegan diet, eco-friendly products', 50000, 'Karachi', 4, 'user1'),
+('Local brands, low-cost options', 30000, 'Lahore', 2, 'user2'),
+('Organic food only', 45000, 'Islamabad', 3, 'user3'),
+('Technology enthusiast', 60000, 'Peshawar', 1, 'user4'),
+('Fitness products', 55000, 'Quetta', 5, 'user5');
+
+INSERT INTO Feedback (userID, userComments, type, adminComments, status, priority) 
+VALUES 
+(1, 'The grocery list generator doesn’t save my preferences.', 'Software bug', NULL, NULL, NULL),
+(3, 'I love the app but wish it had a calorie tracker.', 'Feedback', NULL, NULL, NULL),
+(5, 'The market rate comparison feature seems inaccurate.', 'Software bug', NULL, NULL, NULL);
+
+
+
+
+
 INSERT INTO Item (itemName, price, category) VALUES ('Apples', 1.99, 'Fresh Produce');
 INSERT INTO Item (itemName, price, category) VALUES ('Bananas', 0.59, 'Fresh Produce');
 INSERT INTO Item (itemName, price, category) VALUES ('Carrots', 1.29, 'Fresh Produce');
