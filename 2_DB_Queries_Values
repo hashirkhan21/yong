@@ -183,13 +183,13 @@ VALUES
 (5, 28), -- Hair Gel
 (5, 29); -- Body Lotion
 
-INSERT INTO Shop (name, location, inventoryID) 
+INSERT INTO Shop (name, location, inventoryID, accountName) 
 VALUES 
-('Bismillah Mart', 'F-10, Islamabad', 1),
-('SuperSave', 'Blue Area, Islamabad', 2),
-('MetroStore', 'G-11, Islamabad', 3),
-('Shahjehan Grocers', 'Sector F-6, Islamabad', 4),
-('CityMart', 'I-8, Islamabad', 5);
+('Bismillah Mart', 'F-10, Islamabad', 1, 'ShopAccount1'),
+('SuperSave', 'Blue Area, Islamabad', 2, 'ShopAccount2'),
+('MetroStore', 'G-11, Islamabad', 3, 'ShopAccount3'),
+('Shahjehan Grocers', 'Sector F-6, Islamabad', 4, 'ShopAccount4'),
+('CityMart', 'I-8, Islamabad', 5, 'ShopAccount5');
 
 
 
