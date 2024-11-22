@@ -1,4 +1,3 @@
--- Table to store items
 CREATE TABLE Item (
     itemID INT AUTO_INCREMENT PRIMARY KEY,
     itemName VARCHAR(255) NOT NULL,
@@ -88,7 +87,7 @@ CREATE TABLE SaleLineItem (
     shopID INT NOT NULL,
     PRIMARY KEY (itemID, shopID),
     FOREIGN KEY (itemID) REFERENCES Item(itemID),
-    FOREIGN KEY (shopID) REFERENCES Shop(ID)
+    FOREIGN KEY (shopID) REFERENCES Shop(shopID)
 );
 
 CREATE TABLE OptimalList (
@@ -117,7 +116,7 @@ CREATE TABLE OptimalSaleLineItem (
     PRIMARY KEY (optimalListID, itemID, shopID),
     FOREIGN KEY (optimalListID) REFERENCES OptimalList(ID),
     FOREIGN KEY (itemID) REFERENCES Item(itemID),
-    FOREIGN KEY (shopID) REFERENCES Shop(ID)
+    FOREIGN KEY (shopID) REFERENCES Shop(shopID)
 );
 
 CREATE TABLE SharedList (
@@ -137,6 +136,5 @@ CREATE TABLE SharedSaleLineItem (
     PRIMARY KEY (sharedListSenderID, sharedListReceiverID),
     FOREIGN KEY (sharedListSenderID, sharedListReceiverID) REFERENCES SharedList(senderID, receiverID),
     FOREIGN KEY (itemID) REFERENCES Item(itemID),
-    FOREIGN KEY (shopID) REFERENCES Shop(ID)
+    FOREIGN KEY (shopID) REFERENCES Shop(shopID)
 );
-
