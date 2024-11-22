@@ -27,6 +27,7 @@ CREATE TABLE Inventory_InventoryItem (
     FOREIGN KEY (inventoryItemID) REFERENCES InventoryItem(inventoryItemID) ON DELETE CASCADE
 );
 
+-- previous version by hashir
 -- Table to store shops
 CREATE TABLE Shop (
     shopID INT AUTO_INCREMENT PRIMARY KEY,
@@ -36,6 +37,16 @@ CREATE TABLE Shop (
     FOREIGN KEY (inventoryID) REFERENCES Inventory(inventoryID) ON DELETE CASCADE
 );
 
+-- updated version by abbas
+CREATE TABLE Shop (
+    shopID INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    location VARCHAR(255) NOT NULL,
+    inventoryID INT NOT NULL,                      -- Foreign key referencing Inventory
+    accountName VARCHAR(255) UNIQUE,
+    FOREIGN KEY (inventoryID) REFERENCES Inventory(inventoryID) ON DELETE CASCADE,
+	FOREIGN KEY (accountName) REFERENCES Account(name) ON DELETE CASCADE
+);
 
 
 
