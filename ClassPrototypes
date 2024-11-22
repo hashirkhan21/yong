@@ -109,7 +109,7 @@ class Feedback {
     private
 
     int feedbackID;
-    int userID;
+    User user;
     String userComments;
     String adminComments;
     String type;
@@ -125,7 +125,7 @@ class Feedback {
 
     // Getters
     int getFeedbackID() { return feedbackID; }
-    int getUserID() { return userID; }
+    int getUser() { return user; }
     String getUserComments() { return userComments; }
     String getAdminComments() { return adminComments; }
     String getType() { return type; }
@@ -134,7 +134,7 @@ class Feedback {
 
     // Setters
     void setFeedbackID(int feedbackID) { this.feedbackID = feedbackID; }
-    void setUserID(int userID) { this.userID = userID; }
+    void setUser(User user) { this.user = user; }
     void setUserComments(String userComments) { this.userComments = userComments; }
     void setAdminComments(String adminComments) { this.adminComments = adminComments; }
     void setType(String type) { this.type = type; }
