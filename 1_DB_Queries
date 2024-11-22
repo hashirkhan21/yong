@@ -149,3 +149,20 @@ CREATE TABLE SharedSaleLineItem (
     FOREIGN KEY (itemID) REFERENCES Item(itemID),
     FOREIGN KEY (shopID) REFERENCES Shop(shopID)
 );
+
+CREATE TABLE CustomList (
+    customListID INT AUTO_INCREMENT PRIMARY KEY,
+    userID INT NOT NULL,
+    FOREIGN KEY (userID) REFERENCES User(ID)
+);
+
+CREATE TABLE CustomListSaleLineItem (
+    customListID INT,
+    itemID INT,
+    quantity INT NOT NULL,
+    shopID INT NOT NULL,
+    PRIMARY KEY (customListID, itemID, shopID),
+    FOREIGN KEY (customListID) REFERENCES CustomList(customListID),
+    FOREIGN KEY (itemID) REFERENCES Item(itemID),
+    FOREIGN KEY (shopID) REFERENCES Shop(shopID)
+);
