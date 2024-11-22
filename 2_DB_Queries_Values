@@ -28,7 +28,159 @@ VALUES
 (3, 'I love the app but wish it had a calorie tracker.', 'Feedback', NULL, NULL, NULL),
 (5, 'The market rate comparison feature seems inaccurate.', 'Software bug', NULL, NULL, NULL);
 
+INSERT INTO Inventory () 
+VALUES (), (), (), (), ();
 
+INSERT INTO Item (itemName, price, category)
+VALUES 
+('Rice', 150.00, 'Food Essentials'),
+('Wheat Flour', 100.00, 'Food Essentials'),
+('Sugar', 80.00, 'Food Essentials'),
+('Cooking Oil', 200.00, 'Food Essentials'),
+('Salt', 25.00, 'Food Essentials'),
+('Tea Bags', 150.00, 'Food Essentials'),
+('Pulses', 120.00, 'Food Essentials'),
+('Ghee', 350.00, 'Food Essentials'),
+('Milk Powder', 400.00, 'Food Essentials'),
+('Cereal', 250.00, 'Food Essentials'),
+('Toilet Cleaner', 60.00, 'Utilities'),
+('Dishwashing Liquid', 40.00, 'Utilities'),
+('Laundry Detergent', 200.00, 'Utilities'),
+('Toilet Paper', 50.00, 'Utilities'),
+('Glass Cleaner', 90.00, 'Utilities'),
+('Floor Cleaner', 110.00, 'Utilities'),
+('Mop', 150.00, 'Utilities'),
+('Bucket', 120.00, 'Utilities'),
+('Broom', 80.00, 'Utilities'),
+('Sponges', 30.00, 'Utilities'),
+('Shampoo', 180.00, 'Cosmetics'),
+('Conditioner', 170.00, 'Cosmetics'),
+('Face Wash', 120.00, 'Cosmetics'),
+('Moisturizer', 220.00, 'Cosmetics'),
+('Lipstick', 250.00, 'Cosmetics'),
+('Perfume', 450.00, 'Cosmetics'),
+('Nail Polish', 100.00, 'Cosmetics'),
+('Hair Gel', 150.00, 'Cosmetics'),
+('Body Lotion', 200.00, 'Cosmetics'),
+('Face Cream', 300.00, 'Cosmetics');
+
+-- Insert Inventory Items with stock levels
+INSERT INTO InventoryItem (itemID, stockLevel)
+VALUES 
+(1, 50),  -- Rice
+(2, 30),  -- Wheat Flour
+(3, 40),  -- Sugar
+(4, 20),  -- Cooking Oil
+(5, 100), -- Salt
+(6, 15),  -- Tea Bags
+(7, 60),  -- Pulses
+(8, 25),  -- Ghee
+(9, 10),  -- Milk Powder
+(10, 35), -- Cereal
+(11, 80), -- Toilet Cleaner
+(12, 100),-- Dishwashing Liquid
+(13, 70), -- Laundry Detergent
+(14, 120),-- Toilet Paper
+(15, 50), -- Glass Cleaner
+(16, 90), -- Floor Cleaner
+(17, 75), -- Mop
+(18, 100),-- Bucket
+(19, 60), -- Broom
+(20, 50), -- Sponges
+(21, 30), -- Shampoo
+(22, 40), -- Conditioner
+(23, 60), -- Face Wash
+(24, 30), -- Moisturizer
+(25, 20), -- Lipstick
+(26, 40), -- Perfume
+(27, 80), -- Nail Polish
+(28, 100),-- Hair Gel
+(29, 150),-- Body Lotion
+(30, 90); -- Face Cream
+
+
+-- Shop 1 (Bismillah Mart - Inventory 1)
+-- Combination of Food Essentials, Utilities, and Cosmetics
+INSERT INTO Inventory_InventoryItem (inventoryID, inventoryItemID)
+VALUES 
+(1, 1),  -- Rice
+(1, 2),  -- Wheat Flour
+(1, 4),  -- Cooking Oil
+(1, 11), -- Toilet Cleaner
+(1, 13), -- Laundry Detergent
+(1, 19), -- Broom
+(1, 21), -- Shampoo
+(1, 23), -- Face Wash
+(1, 25), -- Lipstick
+(1, 30); -- Face Cream
+
+-- Shop 2 (SuperSave - Inventory 2)
+-- Combination of Food Essentials, Utilities, and Cosmetics
+INSERT INTO Inventory_InventoryItem (inventoryID, inventoryItemID)
+VALUES 
+(2, 3),  -- Sugar
+(2, 7),  -- Pulses
+(2, 10), -- Cereal
+(2, 12), -- Dishwashing Liquid
+(2, 14), -- Toilet Paper
+(2, 17), -- Mop
+(2, 22), -- Conditioner
+(2, 24), -- Moisturizer
+(2, 28), -- Hair Gel
+(2, 29); -- Body Lotion
+
+-- Shop 3 (MetroStore - Inventory 3)
+-- Combination of Food Essentials, Utilities, and Cosmetics
+INSERT INTO Inventory_InventoryItem (inventoryID, inventoryItemID)
+VALUES 
+(3, 5),  -- Salt
+(3, 6),  -- Tea Bags
+(3, 8),  -- Ghee
+(3, 15), -- Glass Cleaner
+(3, 16), -- Floor Cleaner
+(3, 18), -- Bucket
+(3, 20), -- Sponges
+(3, 26), -- Perfume
+(3, 27), -- Nail Polish
+(3, 30); -- Face Cream
+
+-- Shop 4 (Shahjehan Grocers - Inventory 4)
+-- Combination of Food Essentials, Utilities, and Cosmetics
+INSERT INTO Inventory_InventoryItem (inventoryID, inventoryItemID)
+VALUES 
+(4, 9),  -- Milk Powder
+(4, 10), -- Cereal
+(4, 11), -- Toilet Cleaner
+(4, 14), -- Toilet Paper
+(4, 19), -- Broom
+(4, 20), -- Sponges
+(4, 21), -- Shampoo
+(4, 22), -- Conditioner
+(4, 26), -- Perfume
+(4, 27); -- Nail Polish
+
+-- Shop 5 (CityMart - Inventory 5)
+-- Combination of Food Essentials, Utilities, and Cosmetics
+INSERT INTO Inventory_InventoryItem (inventoryID, inventoryItemID)
+VALUES 
+(5, 1),  -- Rice
+(5, 2),  -- Wheat Flour
+(5, 3),  -- Sugar
+(5, 12), -- Dishwashing Liquid
+(5, 13), -- Laundry Detergent
+(5, 17), -- Mop
+(5, 24), -- Moisturizer
+(5, 25), -- Lipstick
+(5, 28), -- Hair Gel
+(5, 29); -- Body Lotion
+
+INSERT INTO Shop (name, location, inventoryID) 
+VALUES 
+('Bismillah Mart', 'F-10, Islamabad', 1),
+('SuperSave', 'Blue Area, Islamabad', 2),
+('MetroStore', 'G-11, Islamabad', 3),
+('Shahjehan Grocers', 'Sector F-6, Islamabad', 4),
+('CityMart', 'I-8, Islamabad', 5);
 
 
 
