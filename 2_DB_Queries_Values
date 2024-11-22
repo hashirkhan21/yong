@@ -14,6 +14,15 @@ VALUES
 ('user4', 'user4@example.com', 'password4', '4444444444'),
 ('user5', 'user5@example.com', 'password5', '5555555555');
 
+-- Insert 5 dummy accounts for shops
+INSERT INTO Account (name, email, password, phoneNumber)
+VALUES
+('shopAccount1', 'shop1@example.com', 'shopPassword1', '1010101010'),
+('shopAccount2', 'shop2@example.com', 'shopPassword2', '2020202020'),
+('shopAccount3', 'shop3@example.com', 'shopPassword3', '3030303030'),
+('shopAccount4', 'shop4@example.com', 'shopPassword4', '4040404040'),
+('shopAccount5', 'shop5@example.com', 'shopPassword5', '5050505050');
+
 INSERT INTO User (preferences, budget, location, familySize, accountName) 
 VALUES 
 ('Vegan diet, eco-friendly products', 50000, 'Karachi', 4, 'user1'),
