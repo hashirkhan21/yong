@@ -170,11 +170,13 @@ CREATE TABLE CustomListSaleLineItem (
 CREATE TABLE OrderTable (
     ID INT AUTO_INCREMENT PRIMARY KEY,
     userID INT NOT NULL,
+    customListID INT,
     amount DOUBLE,
     status VARCHAR(255),
     time VARCHAR(255),
     address VARCHAR(255),
     date DATE,
-    FOREIGN KEY (userID) REFERENCES User(ID)
+    FOREIGN KEY (userID) REFERENCES User(ID),
+    FOREIGN KEY (customListID) REFERENCES CustomList(customListID)
 );
 
