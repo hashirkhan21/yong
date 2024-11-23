@@ -69,6 +69,12 @@ CREATE TABLE Account (
     phoneNumber VARCHAR(15) 
 );
 
+-- Edit to add "type" column
+ALTER TABLE Account
+ADD COLUMN type VARCHAR(255) DEFAULT 'user';
+
+
+
 CREATE TABLE Admin (
     id INT PRIMARY KEY AUTO_INCREMENT,
     account_name VARCHAR(255) NOT NULL, 
