@@ -103,6 +103,7 @@ CREATE TABLE SaleLineItem (
 
 CREATE TABLE OptimalList (
     ID INT PRIMARY KEY AUTO_INCREMENT,
+    userID INT,
     date DATE NOT NULL,
     totalCost DECIMAL(10, 2) NOT NULL
 );
