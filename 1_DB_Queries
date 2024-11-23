@@ -136,11 +136,10 @@ CREATE TABLE OptimalListPercentages (
 );
 
 CREATE TABLE OptimalSaleLineItem (
-    optimalListID INT,
+    optimalListID INT PRIMARY KEY,
     itemID INT,
     quantity INT NOT NULL,
     shopID INT NOT NULL,
-    PRIMARY KEY (optimalListID, itemID, shopID),
     FOREIGN KEY (optimalListID) REFERENCES OptimalList(ID),
     FOREIGN KEY (itemID) REFERENCES Item(itemID),
     FOREIGN KEY (shopID) REFERENCES Shop(shopID)
