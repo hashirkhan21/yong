@@ -192,6 +192,7 @@ CREATE TABLE OrderTable (
     time VARCHAR(255),
     address VARCHAR(255),
     date DATE,
+    phoneNumber VARCHAR(15),
     FOREIGN KEY (userID) REFERENCES User(ID),
     FOREIGN KEY (customListID) REFERENCES CustomList(customListID)
 );
