@@ -27,6 +27,15 @@ CREATE TABLE Inventory_InventoryItem (
     FOREIGN KEY (inventoryItemID) REFERENCES InventoryItem(inventoryItemID) ON DELETE CASCADE
 );
 
+-- New table for rider
+CREATE TABLE Rider (
+    id INT AUTO_INCREMENT PRIMARY KEY, 
+    vehicle VARCHAR(255),              
+    accountName VARCHAR(255) UNIQUE,   
+    FOREIGN KEY (accountName) REFERENCES Account(name) ON DELETE CASCADE
+);
+
+
 -- previous version by hashir
 -- Table to store shops
 CREATE TABLE Shop (
