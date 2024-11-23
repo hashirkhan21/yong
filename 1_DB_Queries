@@ -53,9 +53,13 @@ CREATE TABLE Shop (
     location VARCHAR(255) NOT NULL,
     inventoryID INT NOT NULL,                      -- Foreign key referencing Inventory
     accountName VARCHAR(255) UNIQUE,
+    status VARCHAR(230),
     FOREIGN KEY (inventoryID) REFERENCES Inventory(inventoryID) ON DELETE CASCADE,
 	FOREIGN KEY (accountName) REFERENCES Account(name) ON DELETE CASCADE
 );
+
+-- Update for shop table, added a status column to help with approve and unapprove process
+alter table shop add column status varchar(230);
 
 
 
