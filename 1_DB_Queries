@@ -201,8 +201,18 @@ CREATE TABLE OrderTable (
     FOREIGN KEY (customListID) REFERENCES CustomList(customListID)
 );
 CREATE TABLE OrderCodes (
-    id INT AUTO_INCREMENT PRIMARY KEY,         -- Unique identifier for each record
-    orderID INT NOT NULL,                      -- Foreign key to reference an order
-    orderCode VARCHAR(10) NOT NULL UNIQUE,     -- Randomly generated, unique order code
-    FOREIGN KEY (orderID) REFERENCES Orders(orderID) -- Foreign key constraint
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    orderID INT NOT NULL,
+    orderCode VARCHAR(10) NOT NULL UNIQUE,
+    FOREIGN KEY (orderID) REFERENCES OrderTable(ID)
 );
+
+CREATE TABLE RiderOrder (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  riderID INT,
+  orderID INT,
+  FOREIGN KEY (riderID) REFERENCES Rider(id),
+  FOREIGN KEY (orderID) REFERENCES OrderTable(ID)
+);
+
+
